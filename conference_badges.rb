@@ -17,10 +17,10 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees) map do |speaker|
+  batch_badge_creator(attendees).map do |speaker|
     puts speaker
 end
-assign_rooms(attendees) map do |speaker|
+assign_rooms(attendees).map do |speaker|
   puts speaker
 end
 end
